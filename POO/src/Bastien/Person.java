@@ -10,6 +10,7 @@ public class Person {
 
     public void prayforBastien() {
         parler("Je prie pour le retour de Bastien");
+        parler("COuou");
     }
 
     public void parler(String texte) {
