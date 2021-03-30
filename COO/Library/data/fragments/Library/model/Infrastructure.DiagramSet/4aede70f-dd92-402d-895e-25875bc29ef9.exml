@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Library" version="4">
+  <OBJECT>
+    <ID name="Library" mc="Infrastructure.DiagramSet" uid="4aede70f-dd92-402d-895e-25875bc29ef9"/>
+    <PID name="Library" mc="Standard.Project" uid="8771f236-1f75-4237-befc-a10b3216926d"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Library]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

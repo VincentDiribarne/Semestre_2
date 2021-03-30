@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="library" version="4">
+  <OBJECT>
+    <ID name="library" mc="Standard.Package" uid="4e928656-da8a-4148-986c-61a1f52bfa0b"/>
+    <PID name="Library" mc="Standard.Project" uid="8771f236-1f75-4237-befc-a10b3216926d"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[library]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="BibliothèqueView" mc="Standard.Class" uid="ad1addb6-e313-42de-88ff-1d53da128198"/>
+        <COMPID name="Bibliothèque" mc="Standard.Class" uid="f53e26cc-1de9-493a-a766-9555ce906fba"/>
+        <COMPID name="Utilisateur" mc="Standard.Class" uid="d6c03619-9261-4517-a849-9e3544588036"/>
+        <COMPID name="Livre" mc="Standard.Class" uid="ca6ccc9e-fd95-468c-afb8-87500b5a9824"/>
+        <COMPID name="Auteur" mc="Standard.Class" uid="0954db51-25cf-447d-bd93-b160e2dbf0fa"/>
+        <COMPID name="Editeur" mc="Standard.Class" uid="32301b0f-159e-43e7-bb47-77619dd28054"/>
+        <COMPID name="LivreView" mc="Standard.Class" uid="cc77c971-529c-46bd-9084-e2897352856e"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de Classe" mc="Standard.ClassDiagram" uid="bc632858-d73e-49ae-9d3a-79fb333607a0"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

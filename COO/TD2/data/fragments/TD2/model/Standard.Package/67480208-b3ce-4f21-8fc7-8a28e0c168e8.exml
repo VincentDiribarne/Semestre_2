@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Exercice 1" version="4">
+  <OBJECT>
+    <ID name="Exercice 1" mc="Standard.Package" uid="67480208-b3ce-4f21-8fc7-8a28e0c168e8"/>
+    <PID name="td2" mc="Standard.Package" uid="778fde6c-b550-4549-9cec-952bb1c28263"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Exercice 1]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Sequence (Exercice 1)" mc="Standard.Interaction" uid="1da4884a-b97d-4d30-bd5a-ec19f529110e"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Company" mc="Standard.Class" uid="77befbb9-6f8e-40ee-b809-84f2c1e8c730"/>
+        <COMPID name="Person" mc="Standard.Class" uid="e8bde2c9-b2b8-46b9-8554-c94d40930a42"/>
+        <COMPID name="Administrator" mc="Standard.Class" uid="fdbbdbc2-10bb-4eb9-8ddb-948c3bd0988b"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de Classe (Exercice 1)" mc="Standard.ClassDiagram" uid="4e3efad8-a5c2-48f6-9a4f-c856d576d686"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

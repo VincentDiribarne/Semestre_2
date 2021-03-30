@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Td3" version="4">
+  <OBJECT>
+    <ID name="Td3" mc="Standard.Package" uid="284319ea-8b9a-4229-8944-9f2e492c9cc6"/>
+    <PID name="TD3" mc="Standard.Project" uid="a5cc960e-6d0a-4685-ba9c-0cbf53f27512"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Td3]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Exercice 1" mc="Standard.Package" uid="ff9eb051-5a8e-4420-8434-f452e6051b6f"/>
+        <COMPID name="Exercice 2" mc="Standard.Package" uid="eff84ad0-cf0f-4a84-9739-2ac0965d435f"/>
+        <COMPID name="Exercice 4" mc="Standard.Package" uid="88765f9b-697c-49e2-bc05-698142c75f41"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

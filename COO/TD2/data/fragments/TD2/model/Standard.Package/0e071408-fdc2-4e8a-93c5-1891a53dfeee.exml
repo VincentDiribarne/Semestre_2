@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Exercice 4" version="4">
+  <OBJECT>
+    <ID name="Exercice 4" mc="Standard.Package" uid="0e071408-fdc2-4e8a-93c5-1891a53dfeee"/>
+    <PID name="td2" mc="Standard.Package" uid="778fde6c-b550-4549-9cec-952bb1c28263"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Exercice 4]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Zoo" mc="Standard.Class" uid="391decaa-66c1-4690-bf3d-3c9ad28a3dc2"/>
+        <COMPID name="Soigneur" mc="Standard.Class" uid="435d3375-e8b3-475a-a764-5fef76500725"/>
+        <COMPID name="Soin" mc="Standard.Class" uid="057d011b-1e3e-4637-ac53-e5abe4df943d"/>
+        <COMPID name="Medicament" mc="Standard.Class" uid="3e2fa36b-5170-4b70-afe5-feec774cb3db"/>
+        <COMPID name="Animal" mc="Standard.Class" uid="3439c008-baf5-4aea-8072-b6422a74b35b"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe Exercice 4" mc="Standard.ClassDiagram" uid="e864ee43-e0c4-4a19-94fa-e8658e2100cb"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

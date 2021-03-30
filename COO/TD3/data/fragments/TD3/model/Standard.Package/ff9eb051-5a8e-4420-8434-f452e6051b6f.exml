@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Exercice 1" version="4">
+  <OBJECT>
+    <ID name="Exercice 1" mc="Standard.Package" uid="ff9eb051-5a8e-4420-8434-f452e6051b6f"/>
+    <PID name="Td3" mc="Standard.Package" uid="284319ea-8b9a-4229-8944-9f2e492c9cc6"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Exercice 1]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Streaming Platform" mc="Standard.Package" uid="f66ae7ff-7b18-491d-9211-c092540f20de"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Streaming Platform" version="4">
+  <OBJECT>
+    <ID name="Streaming Platform" mc="Standard.Package" uid="f66ae7ff-7b18-491d-9211-c092540f20de"/>
+    <PID name="Exercice 1" mc="Standard.Package" uid="ff9eb051-5a8e-4420-8434-f452e6051b6f"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Streaming Platform]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Watch Movies" mc="Standard.UseCase" uid="efe9abcd-291c-4154-8382-5ccff52f8f12"/>
+        <COMPID name="Subscribe " mc="Standard.UseCase" uid="4d3e7e61-ce66-4f27-b1cb-797a2f1844b4"/>
+        <COMPID name="Access HD Videos" mc="Standard.UseCase" uid="76cb7668-4a7c-403a-85e7-e6654f6ffed5"/>
+        <COMPID name="Access to Subtitles" mc="Standard.UseCase" uid="4d7ae753-d61c-494d-9573-12e53f342a05"/>
+        <COMPID name="Advertise are disabled" mc="Standard.UseCase" uid="e31acc0b-8f11-4c39-aa5e-6e660c9555f4"/>
+        <COMPID name="Customer" mc="Standard.Actor" uid="e8453920-cce6-4a24-a690-eeaf64c2549d"/>
+        <COMPID name="Server" mc="Standard.Actor" uid="8df1966c-c7a9-44fc-9390-d95ef827da3f"/>
+        <COMPID name="User" mc="Standard.Actor" uid="f558196c-7ad0-4eee-a744-5a804d829d7f"/>
+        <COMPID name="Secure payment system " mc="Standard.Actor" uid="5554a6d8-1f72-4712-b353-eb5e499241a2"/>
+        <COMPID name="Subscribe for a month" mc="Standard.UseCase" uid="67e1ff92-bbcd-4d40-94e1-5f6e70169b6c"/>
+        <COMPID name="Subscribe for a year" mc="Standard.UseCase" uid="f9e3e3ce-d680-46bc-872b-80e7eed8a94d"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme Use Case (Exercice 1)" mc="Standard.UseCaseDiagram" uid="c91ef7b2-7e66-48da-8ccd-216b68c94df8"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Exercice 2" version="4">
+  <OBJECT>
+    <ID name="Exercice 2" mc="Standard.Package" uid="9811a166-902c-48a0-b5fa-cf699a9f63ad"/>
+    <PID name="td2" mc="Standard.Package" uid="778fde6c-b550-4549-9cec-952bb1c28263"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Exercice 2]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="3d7dfcce-8734-4641-80c5-ec711a5a732c"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Car" mc="Standard.Class" uid="22695b56-0058-4532-b3eb-73b0de856c96"/>
+        <COMPID name="Motor" mc="Standard.Class" uid="dbf118fc-2514-4c64-9c70-9e43ef651ae8"/>
+        <COMPID name="Body" mc="Standard.Class" uid="63b3fd57-b586-42d6-895f-e15d71b28aed"/>
+        <COMPID name="Wheel" mc="Standard.Class" uid="ef9ce693-cc1e-4da5-8d65-502969db3d59"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe (Exercice 2)" mc="Standard.ClassDiagram" uid="dabe5808-dbfd-4bac-add9-8756b2c446f2"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

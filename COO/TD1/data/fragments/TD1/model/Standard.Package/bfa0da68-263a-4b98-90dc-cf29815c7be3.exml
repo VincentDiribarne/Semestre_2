@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Exercice 1" version="4">
+  <OBJECT>
+    <ID name="Exercice 1" mc="Standard.Package" uid="bfa0da68-263a-4b98-90dc-cf29815c7be3"/>
+    <PID name="TD1" mc="Standard.Project" uid="eaf40eeb-5d60-4a53-be7b-5cb2757dc0d6"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Exercice 1]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Animal" mc="Standard.Class" uid="248106eb-06d2-4a63-b1bf-992b06f9e74b"/>
+        <COMPID name="Pigs" mc="Standard.Class" uid="de557761-351f-47bc-a0a6-9f2077a02565"/>
+        <COMPID name="Cattle" mc="Standard.Class" uid="dd11cca2-cfbb-4761-9a1d-583d5089cd39"/>
+        <COMPID name="Sheep" mc="Standard.Class" uid="1e098d1d-f7f2-4c20-a202-fa18a6b5d3fc"/>
+        <COMPID name="Beef" mc="Standard.Class" uid="531bbb03-16d0-49d8-83c9-af135796a017"/>
+        <COMPID name="Buffalo" mc="Standard.Class" uid="42a356d5-8228-4ac5-a180-5fb2323cb80f"/>
+        <COMPID name="Domestic" mc="Standard.Class" uid="61448f85-6639-48db-9760-a23cd6838b84"/>
+        <COMPID name="Wild" mc="Standard.Class" uid="3c89bec5-c9cb-41c3-b998-bec751c4168b"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de Classe" mc="Standard.ClassDiagram" uid="5d1122ee-cc95-4492-a46f-b6dea08d39cb"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

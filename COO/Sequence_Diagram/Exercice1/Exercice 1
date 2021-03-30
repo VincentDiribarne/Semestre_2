@@ -1,0 +1,19 @@
+In the class A
+
+sd() {
+    b.message();
+
+    if(condition 1) {
+        b.message1
+    }
+
+    while (condition) {
+        if (condition 2) {
+            b.message2;
+            message3;
+        } else {
+            b.message4;
+        }
+        message5;
+    }
+}

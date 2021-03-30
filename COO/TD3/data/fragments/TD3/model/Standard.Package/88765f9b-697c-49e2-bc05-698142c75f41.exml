@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Exercice 4" version="4">
+  <OBJECT>
+    <ID name="Exercice 4" mc="Standard.Package" uid="88765f9b-697c-49e2-bc05-698142c75f41"/>
+    <PID name="Td3" mc="Standard.Package" uid="284319ea-8b9a-4229-8944-9f2e492c9cc6"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Exercice 4]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="State Machine" mc="Standard.StateMachine" uid="cdd4779e-d4d4-44f3-80e3-ab67db1778af"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

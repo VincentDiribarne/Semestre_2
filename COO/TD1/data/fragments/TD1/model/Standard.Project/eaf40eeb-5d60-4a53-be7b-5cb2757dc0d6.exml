@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TD1" version="4">
+  <OBJECT>
+    <ID name="TD1" mc="Standard.Project" uid="eaf40eeb-5d60-4a53-be7b-5cb2757dc0d6"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[TD1]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="Exercice 1" mc="Standard.Package" uid="bfa0da68-263a-4b98-90dc-cf29815c7be3"/>
+        <COMPID name="Exercice 2" mc="Standard.Package" uid="7bb40f2c-fbbe-4f97-92a0-4580f4c63ffb"/>
+        <COMPID name="Exercice 3" mc="Standard.Package" uid="82c4921a-b8f9-4865-8869-825cbd3f48f8"/>
+        <COMPID name="Exercice 4" mc="Standard.Package" uid="13b8cc25-9d05-4887-86a8-43a302ae3872"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="TD1" mc="Infrastructure.DiagramSet" uid="391154f2-d523-4517-81cd-16251b1b2a2e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

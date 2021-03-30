@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Garage" version="4">
+  <OBJECT>
+    <ID name="Garage" mc="Standard.Package" uid="2a37f38c-3ac3-4d27-a9a5-a6156b9e5cf2"/>
+    <PID name="Exercice 2" mc="Standard.Package" uid="eff84ad0-cf0f-4a84-9739-2ac0965d435f"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Garage]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Activity" mc="Standard.Activity" uid="f22d9607-31e1-4f88-978f-13a8006f49de"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Manage the garage software" mc="Standard.UseCase" uid="72623468-7ab4-43e6-a0db-3f0309e4ce82"/>
+        <COMPID name="Garage Manager" mc="Standard.Actor" uid="f85638da-b9fa-4f6a-9a63-265dedb77e28"/>
+        <COMPID name="Storekeeper" mc="Standard.Actor" uid="18080d8d-e308-4d22-b517-7c8022280090"/>
+        <COMPID name="Test car" mc="Standard.UseCase" uid="3868b0f0-7c63-4953-b5ef-c59b87e1ff39"/>
+        <COMPID name="Create a repair Sheet" mc="Standard.UseCase" uid="c26de5e6-8575-4dc5-9a97-85637ad14d64"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme Use Case (Exercice 2)" mc="Standard.UseCaseDiagram" uid="b0e0bf48-f4c4-4275-a195-0254c8e67702"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
