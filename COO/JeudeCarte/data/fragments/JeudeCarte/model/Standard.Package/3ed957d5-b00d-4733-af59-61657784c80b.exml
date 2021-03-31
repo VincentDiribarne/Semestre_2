@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="jeudecarte" version="4">
+  <OBJECT>
+    <ID name="jeudecarte" mc="Standard.Package" uid="3ed957d5-b00d-4733-af59-61657784c80b"/>
+    <PID name="JeudeCarte" mc="Standard.Project" uid="e5272aca-18cd-4fb3-93bc-a881a2a86a82"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[jeudecarte]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="9c013b0d-9ee2-4fde-bd5c-8aebb2a415dc"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="CardStack" mc="Standard.Class" uid="5c5a1bc0-7225-486e-a036-6fdef8537014"/>
+        <COMPID name="CarteDeck" mc="Standard.Class" uid="72af398a-f202-4baa-8078-9c4073e5a413"/>
+        <COMPID name="BattleGame" mc="Standard.Class" uid="9c119629-1e2a-44e4-977f-a36a35b56eb2"/>
+        <COMPID name="Player" mc="Standard.Class" uid="218f5afd-853d-4351-9c1c-9375a28f4ff9"/>
+        <COMPID name="Card" mc="Standard.Class" uid="c07652c0-b28a-4c2c-bc1a-edf3fc9c697e"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe jeudecarte" mc="Standard.ClassDiagram" uid="692f87a3-b01c-4644-8b0e-5241873ad8f1"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

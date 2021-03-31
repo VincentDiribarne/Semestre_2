@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="JeudeCarte" version="4">
+  <OBJECT>
+    <ID name="JeudeCarte" mc="Infrastructure.DiagramSet" uid="db73adc6-6cae-4aae-9c71-635bba6e9c75"/>
+    <PID name="JeudeCarte" mc="Standard.Project" uid="e5272aca-18cd-4fb3-93bc-a881a2a86a82"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[JeudeCarte]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>
