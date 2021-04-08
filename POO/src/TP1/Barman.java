@@ -30,7 +30,7 @@ public class Barman extends Humain {
     @Override
     public void sePresenter() {
         parler("Yo moi c'est " + tonNom()+ ", ma boisson favorite, c'est le " +quelEstTaBoissonFavorite()+ " et je possede un bar nomme '" +nomBar+ "'.");
-        System.out.println("Coucou");        
+        System.out.println("C'est un test");        
         System.out.println("");
     }
 }
