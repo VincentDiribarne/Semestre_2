@@ -1,6 +1,6 @@
 package TP3.Exercice2;
 
-public class Mendiant extends Humain {
+public class Mendiant {
     private String name;
 
     public void Mendiant(String name) {
