@@ -19,7 +19,7 @@ public class Dame extends Humain {
 
     }
 
-    public boolean estKidnappeePar(Brigand nom) {
+    public boolean estKidnappeePar(HorsLaLoi nom) {
         if (!libre) {
             parler("AHHHH, j'ai ete capturee par " +nom.tonNom());
             libre = true;

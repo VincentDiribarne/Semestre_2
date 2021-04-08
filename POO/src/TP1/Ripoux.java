@@ -2,7 +2,7 @@ package TP1;
 
 import java.util.ArrayList;
 
-public class Brigand extends Humain implements HorsLaLoi{
+public class Ripoux extends Sherif implements HorsLaLoi{
 
     private String look;
     private int recompense = 100;
@@ -11,24 +11,16 @@ public class Brigand extends Humain implements HorsLaLoi{
 
     private ArrayList<Dame> dameEnlevees;
 
-    public static String BOISSON_PAR_DEFAUT = "le tord-boyaux";
-    public static String LOOK_PAR_DEFAUT = "mechant";
-
-    public Brigand(String nom) {
-        this(nom, BOISSON_PAR_DEFAUT, LOOK_PAR_DEFAUT);
-    }
-
-    public Brigand(String nom, String boisson, String look) {
-        super(nom, boisson);
-        this.look=look;
-        this.recompense=recompense;
+    public Ripoux(String nom) {
+        super(nom);
         dameEnlevees = new ArrayList<Dame>();
     }
 
+    @Override
     public int kidnapper(Dame dame) {
         if (dame.isLibre() == false) {
             parler("Ah ah, vous etes mienne " +dame.tonNom());
-            dame.estKidnappeePar(Brigand.this);
+            dame.estKidnappeePar(this);
             dameEnlevees.add(dame);
             nbDameCapturee++;
             parler("Je vaut desormais " +recompense(nbDameCapturee)+ " pesos \n");
@@ -38,11 +30,13 @@ public class Brigand extends Humain implements HorsLaLoi{
         return nbDameCapturee;
     }
 
+    @Override
     public int recompense(int nbDameCapturee) {
         recompense = (nbDameCapturee * 100);
         return recompense;
     }
 
+    @Override
     public void estEmprisonnePar(CowBoy cowBoy) {
         if (!prison) {
             parler("Damned, je suis fait par " + cowBoy.tonNom() + ", tu m'as eu !\n");
@@ -69,14 +63,9 @@ public class Brigand extends Humain implements HorsLaLoi{
     }
 
     @Override
-    public String tonNom() {
-        return super.tonNom()+ " le " +look;
-    }
-
-    @Override
     public void sePresenter() {
         parler("Hey, je suis " + tonNom() + " et j'aime " + quelEstTaBoissonFavorite());
-        parler("J'ai l'air " +look+ " et j'ai deja capture " +nbDameCapturee+ " dames, AHAHAH");
-        parler("Ma tete est mise a prix pour " +getRecompense()+ " pesos \n");
+        parler("Mettez les mains en l'air, je vous arrête");
+        parler("C'est faux, vasi tire toi, plus vite que ça, je suis dans ton camp");
     }
 }
