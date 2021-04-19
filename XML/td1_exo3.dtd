@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE cdtheque [
+    <!ELEMENT cdtheque (cd+) >
+    <!ATTLIST cdtheque date CDATA #REQUIRED>
+    <!ATTLIST cdtheque auteur CDATA #REQUIRED>
+    <!ELEMENT cd (titre,artiste,style?)>
+    <!ELEMENT titre (#PCDATA)>
+    <!ELEMENT style (#PCDATA)>
+    <!ELEMENT artiste (#PCDATA)>
+]>
+
+<cdtheque date="05/10/2005" auteur="Florent Pagny">
+    <cd>
+        <titre> Ma liberté de Penser</titre>
+        <artiste> Florent Pagny </artiste>
+        <style> Musique Francophone </style>
+    </cd>
+</cdtheque>
