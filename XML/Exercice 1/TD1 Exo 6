@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tasklist SYSTEM "TD1 Exo 6 DTD">
+<tasklist>
+    <task name="eat"/>
+    <task name="drink"/>
+    <task name="play"/>
+</tasklist>

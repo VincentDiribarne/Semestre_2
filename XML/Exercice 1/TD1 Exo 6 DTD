@@ -1,0 +1,3 @@
+<!ELEMENT task EMPTY>
+<!ATTLIST task name (eat|drink|play) "eat">
+<!ELEMENT tasklist (task,task,task)>

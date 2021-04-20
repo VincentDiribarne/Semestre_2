@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE films SYSTEM "TD1 Exo 4 DTD">
+<films>
+    <film>
+        <titre>L'Armée des douze singes</titre>
+        <annee>1995</annee>
+        <genre>Science-Fiction</genre>
+        <nationalite>americain</nationalite>
+        <duree>129</duree>
+        <realisateur>Bruno Podalydès</realisateur>
+        <acteurs>
+            <acteur role="principal">Bruce Willis</acteur>
+            <acteur role="principal">Madeleine Stowe</acteur>
+            <acteur role="principal">Brad Pitt</acteur>
+            <acteur role="secondaire">Christopher Plummer</acteur>
+            <acteur role="secondaire">David Morse</acteur>
+        </acteurs>
+        <histoire>En 1996, la surface de la Terre est devenue invivable pour l'humanité. Un virus mortel d'origine inconnue a tué 5 milliards d'humains et a contraint les survivants — 1 % de la population mondiale — à vivre sous terre pour éviter leur contamination. En 2035, pour tenter de trouver un remède au virus, des scientifiques utilisent des prisonniers et les envoient dans le passé recueillir des informations sur la forme non-mutée du virus. L'un d'eux, James Cole (Bruce Willis), est choisi pour une expérience ayant pour but de l'amener en 1996. Il doit y recueillir des informations au sujet de ce virus, dont les scientifiques pensent qu'il a été libéré par une organisation terroriste de défense des animaux et connue sous le nom d'"Armée des douze singes"...</histoire>
+        <entrees>123456</entrees>
+    </film>
+    <film>
+        <titre>Le péril jeune</titre>
+        <annee>1994</annee>
+        <genre>Comédie dramatique</genre>
+        <nationalite>français</nationalite>
+        <duree>129</duree>
+        <realisateur>Cédric Klapisch</realisateur>
+    </film>
+    <film>
+        <titre>Le Hobbit : Un voyage inattendu</titre>
+        <annee>2012</annee>
+        <genre>Fantastique</genre>
+        <nationalite>americain</nationalite>
+        <duree>169</duree>
+        <realisateur>Peter Jackson</realisateur>
+    </film>
+    <film>
+        <titre>Le Hobbit : La Désolation de Smaug</titre>
+        <annee>2013</annee>
+        <genre>Fantastique</genre>
+        <nationalite>americain</nationalite>
+        <duree>161</duree>
+        <realisateur>Peter Jackson</realisateur>
+    </film>
+    <film>
+        <titre>Le Hobbit : la Bataille des Cinq Armées</titre>
+        <annee>2014</annee>
+        <genre>Fantastique</genre>
+        <nationalite>americain</nationalite>
+        <duree>144</duree>
+        <realisateur>Peter Jackson</realisateur>
+    </film>
+    <film>
+        <titre>Star Wars : Le Réveil de la Force</titre>
+        <annee>2015</annee>
+        <genre>Science-Fiction</genre>
+        <nationalite>americain</nationalite>
+        <duree>101</duree>
+        <realisateur>J.J. Abrams</realisateur>
+        <acteurs>
+            <acteur role="principal">Harrison Ford</acteur>
+            <acteur role="principal">Carrie Fisher</acteur>
+            <acteur role="secondaire">Daisy Ridley</acteur>
+        </acteurs>
+        <histoire>La suite... 7ième épisode : dans une galaxie lointaine, très lointaine, un nouvel épisode de la saga "Star Wars", 30 ans après les événements du "Retour du Jedi".</histoire>
+        <entrees>0</entrees>
+    </film>
+    <film>
+        <titre>Star Wars : Le dernier Jedi</titre>
+        <annee>2017</annee>
+        <genre>Science-Fiction</genre>
+        <nationalite>americain</nationalite>
+        <duree>101</duree>
+        <realisateur>Rian Johnson</realisateur>
+        <acteurs>
+            <acteur role="principal">Carrie Fisher</acteur>
+            <acteur role="secondaire">Daisy Ridley</acteur>
+            <acteur role="secondaire">Benicio Del Toro</acteur>
+        </acteurs>
+        <histoire>La suite... 8ième épisode : dans une galaxie lointaine, très lointaine, un nouvel épisode de la saga "Star Wars", 30 ans après les événements du "Retour du Jedi".</histoire>
+        <entrees>0</entrees>
+    </film>
+    <film>
+        <titre>Star Wars : Episode IX</titre>
+        <annee>2019</annee>
+        <genre>Science-Fiction</genre>
+        <nationalite>americain</nationalite>
+        <duree>101</duree>
+        <realisateur>J.J. Abrams</realisateur>
+        <acteurs>
+            <acteur role="secondaire">Daisy Ridley</acteur>
+        </acteurs>
+        <histoire>La suite... 9ième épisode : dans une galaxie lointaine, très lointaine, un nouvel épisode de la saga "Star Wars", 30 ans après les événements du "Retour du Jedi".</histoire>
+        <entrees>0</entrees>
+    </film>
+    <film>
+        <titre>LE MONDE DE NEMO</titre>
+        <annee>2016</annee>
+        <genre>Animation</genre>
+        <nationalite>americain</nationalite>
+        <duree>101</duree>
+        <realisateur>Andrew Stanton</realisateur>
+        <acteurs>
+            <acteur role="principal">Franck Dubosc</acteur>
+            <acteur role="principal">Samy Naceri</acteur>
+            <acteur role="secondaire">Gwénael Sommier</acteur>
+        </acteurs>
+        <histoire>Nemo, un jeune poisson-clown, s'égare de son récif de corails et se perd dans le vaste océan. Son père Marin part à sa recherche et affronte divers dangers pour le retrouver....</histoire>
+        <entrees>9876235</entrees>
+    </film>
+    <film>
+        <titre>LE HOBBIT : UN VOYAGE INATTENDU</titre>
+        <annee>2012</annee>
+        <genre>Fantastique</genre>
+        <nationalite>americain</nationalite>
+        <duree>155</duree>
+        <realisateur>Peter Jackson</realisateur>
+        <entrees>9876236</entrees>
+    </film>
+</films>

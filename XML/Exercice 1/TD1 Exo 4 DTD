@@ -1,0 +1,14 @@
+<!ELEMENT films (film)+>
+        <!ELEMENT film (titre, annee, genre, nationalite, duree, realisateur, acteurs?, histoire?, entrees?)>
+        <!ELEMENT titre (#PCDATA)>
+        <!ELEMENT annee (#PCDATA)>
+        <!ELEMENT duree (#PCDATA)>
+        <!ELEMENT genre (#PCDATA)>
+        <!ELEMENT nationalite (#PCDATA)>
+        <!ELEMENT realisateur (#PCDATA)>
+        <!ELEMENT acteurs (acteur)+>
+        <!ELEMENT acteur (#PCDATA)>
+        <!ATTLIST acteur role (principal|secondaire) #REQUIRED>
+        <!ELEMENT histoire (#PCDATA)>
+        <!ELEMENT entrees (#PCDATA)>
+        <!ATTLIST titre langue CDATA #IMPLIED>
