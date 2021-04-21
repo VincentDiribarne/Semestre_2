@@ -4,6 +4,9 @@
 #include <string.h>
 #include <math.h>
 
+
+int coucouCestMoileMenu(int *redondance);
+
 void menu(int redondance) {
 	if (redondance == 1) {
 		printf("\n");
@@ -97,13 +100,11 @@ void afficherResultat(int bp, int mp) {
 }
 
 void lancement(int redondance) {
-	int redon;
-	printf("%d\n", redon);
-	int affCodeSecret, rejouer;
+	int affCodeSecret;
     int secret[5];
 	int essay[5];
 	char chararr[99];
-	choisirSolution(secret, redon);
+	choisirSolution(secret, redondance);
 
 	printf("Voulez vous afficher le code secret ? (1 --> Oui, autre --> Non)\n");
 	scanf("%d", &affCodeSecret);
@@ -144,59 +145,62 @@ void lancement(int redondance) {
 		}
 		
 	} else {
-		printf("Dommage, c'est perdu...\n");
+		printf("\nDommage, c'est perdu...\n");
 		printf("Le code secret etait : ");
 		for(int i = 0 ; i < 5 ; i++){
 			printf("%d", secret[i]);
 		} 
-		printf("\n");
+		printf("\n\n");
 	}
 
-	printf("Voulez vous rejouer ? (1 --> rejouer, autre nombre --> quitter)");
-	scanf("%d", &rejouer);
-
-	if (rejouer == 1) {
-		coucouCestMoileMenu(redon);
-	} else {
-		exit;
-	}
+	
 }
 
-void coucouCestMoileMenu(int redondance) {
-	int reponse;
-    menu(redondance);
+int coucouCestMoileMenu(int *redondance) {
+	int reponse, rejouer;
+    menu(*redondance);
     printf("\nVotre choix ? ");
     scanf("%d", &reponse);
     switch (reponse) {
     case 1:
-        lancement(redondance);
+        lancement(*redondance);
+		printf("Voulez vous rejouer ? (1 --> rejouer, autre nombre --> quitter)");
+		scanf("%d", &rejouer);
+
+		if (rejouer != 1) {
+			reponse = 4;
+		} 
         break;
+
     case 2 :
         printf("\nVoici les regles du Mastermind :");
     	printf("\n");
     	printf("Vous avez 12 coups pour trouver la solution. \nVous devez trouver une suite de 5 couleurs, dans le bon ordre. \nA chaque fois, on vous indiquera si vous avez les bonnes couleurs ou la bonne suite.");
     	printf("\nBonne chance !\n");
-		coucouCestMoileMenu(redondance);
+		break;
+		
     case 3 :
-		if (redondance == 0) {
-			redondance = 1;
+		if (*redondance == 0) {
+			*redondance = 1;
 		} else {
-			redondance = 0;
+			*redondance = 0;
 		}
-		coucouCestMoileMenu(redondance);
         break;
+
 	case 4 :
 		printf("Vous quittez le programme");
 		break;
     default:
 		printf("Erreur !");
-        coucouCestMoileMenu(redondance);
+		break;
+        
     }
+	return (reponse == 4) ? 0 : 1;
 }
 
 //Programme principal
 int main() {
 	int redondance = 0;
-    coucouCestMoileMenu(redondance);
-    return 0; 
+	while (coucouCestMoileMenu(&redondance));
+	return 0; 
 }
