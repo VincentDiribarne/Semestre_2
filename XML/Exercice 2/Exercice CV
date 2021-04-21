@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CV xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Exercice Cv.xsd">
+    <Departement>53</Departement>
+
+    <Genre>Masculin</Genre>
+
+    <Mail>vdiribarne@gmail.com</Mail>
+
+    <telephones>
+        <telephone>0299988488</telephone>
+        <telephone>0767155690</telephone>
+        <telephone>0123456789</telephone>
+    </telephones>
+</CV>

@@ -247,9 +247,19 @@ public class InterfacePolice extends Application {
         colorPicker.setOnAction(actionEvent -> label4.setTextFill(colorPicker.getValue()));
 
         //Aperçu
-        Canvas canvas = new Canvas(250, 250);
+        Canvas canvas = new Canvas(500, 100);
         Label text = new Label("Police TrueType, identique à l'écran et à l'impression");
         text.setTextFill(blanc);
+        var gc = canvas.getGraphicsContext2D();
+        gc.setStroke(blanc);
+        gc.setLineWidth(2);
+
+        var rect_height = 80;
+        var rect_width = 400;
+        var x = Math.round((canvas.getWidth() / 2) - (400 / 2));
+        var y = Math.round((canvas.getHeight() / 2) -  (80 / 2));
+
+        gc.strokeRect(x,y,rect_width,rect_height);
 
         Grid_aperçu.getChildren().addAll(canvas, text);
 
@@ -258,7 +268,7 @@ public class InterfacePolice extends Application {
         primaryStage.setTitle("Police");
         primaryStage.setScene(new Scene(home, 300, 275));
         primaryStage.setMinWidth(500);
-        primaryStage.setMinHeight(600);
+        primaryStage.setMinHeight(620);
         primaryStage.setResizable(false);
         primaryStage.show();
     }

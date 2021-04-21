@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import static TpGraphe.GrapheValue.INFINI;
+
 
 public class Test2 {
 
@@ -11,7 +13,28 @@ public class Test2 {
 	{
 		System.out.println("Creation du graphe.");
 		System.out.print("Nombre de sommets du graphe ? ");
-		GrapheValue g = new GrapheValueMatrice(lireNombre());
+		int[][] matVal = new int[4][4];
+		int nb_sommets = 4;
+		matVal = new int[4][4];
+		matVal[0][2] = 3;
+		matVal[3][0] = 3;
+		matVal[3][1] = 2;
+		matVal[1][2] = 1;
+
+		matVal[0][0] = INFINI;
+		matVal[0][1] = INFINI;
+		matVal[0][3] = INFINI;
+		matVal[1][1] = INFINI;
+		matVal[1][0] = INFINI;
+		matVal[1][3] = INFINI;
+		matVal[2][0] = INFINI;
+		matVal[2][1] = INFINI;
+		matVal[2][2] = INFINI;
+		matVal[2][3] = INFINI;
+		matVal[3][2] = INFINI;
+		matVal[3][3] = INFINI;
+
+		GrapheValue g = new GrapheValueMatrice(nb_sommets, matVal);
 		boolean boucle = true;
 		
 		while (boucle)
@@ -24,6 +47,7 @@ public class Test2 {
 				System.out.println("Pour supprimer un arc, tapez 3.");
 				System.out.println("Pour ajouter un sommet, tapez 4.");
 				System.out.println("Pour supprimer un sommet, tapez 5.");
+				System.out.println("Pour creer un graphe en auto, tapez 6");
 				System.out.println("Pour passer a la phase suivante, tapez 0.");
 				System.out.print("Votre choix ? ");
 				int choix = lireNombre();
@@ -52,7 +76,7 @@ public class Test2 {
 						break;
 					}
 					int val=g.valuationArc(dpt, arr);
-					if (val==GrapheValue.INFINI)
+					if (val== INFINI)
 					{
 						System.out.println("Cet arc va etre cree.");
 						System.out.print("Valuation de l'arc ? ");
@@ -97,7 +121,9 @@ public class Test2 {
 						System.out.println("\nSommet supprime.");
 					else
 						System.out.println("\nCe sommet ne fait pas partie du graphe.");
-					break;
+					break; 
+				case 6 :
+
 				}	
 			}
 
@@ -124,10 +150,12 @@ public class Test2 {
 			case 2 :
 				boucle2 = false;
 				break;
-			case 3 : 
+			case 3 :
+
+				GrapheValue gTest = new GrapheValueMatrice(nb_sommets, matVal);
 				System.out.print("\nSommet de depart ? ");
 				int sommet = lireNombre();
-				try{AlgoDistance.bellmanFord(g, sommet);}
+				try{AlgoDistance.bellmanFord(gTest, sommet);}
 				catch(IllegalArgumentException e){e.printStackTrace();}
 				break;
 			case 4 :
@@ -170,7 +198,7 @@ public class Test2 {
 		int tailleMax = String.valueOf(n).length();
 		for (int i=0; i<n; i++)
 			for (int j=0; j<n; j++)
-				if (matrice[i][j]!=GrapheValue.INFINI && 
+				if (matrice[i][j]!= INFINI &&
 						tailleMax < String.valueOf(matrice[i][j]).length())
 					tailleMax = String.valueOf(matrice[i][j]).length();
 		
@@ -183,7 +211,7 @@ public class Test2 {
 			{
 			ligne =blanc(tailleMax-String.valueOf(i+1).length())+(i+1);
 			for (int j=0; j<n; j++)
-				if (matrice[i][j]==GrapheValue.INFINI)
+				if (matrice[i][j]== INFINI)
 					ligne+=blanc(tailleMax)+"-";
 				else
 					ligne+=blanc(tailleMax+1-String.valueOf(matrice[i][j]).length())+matrice[i][j];
