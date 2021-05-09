@@ -269,7 +269,7 @@ public class InterfacePolice extends Application {
         primaryStage.setScene(new Scene(home, 300, 275));
         primaryStage.setMinWidth(500);
         primaryStage.setMinHeight(620);
-        primaryStage.setResizable(false);
+        //primaryStage.setResizable(false);
         primaryStage.show();
     }
 
