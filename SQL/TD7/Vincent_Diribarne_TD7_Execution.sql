@@ -24,3 +24,6 @@
 
 --Question 18
 --Select * from spectacle_info
+
+--Question 23
+--Select * from spectacle_info order by Nom_Spectacle, date_spectacle

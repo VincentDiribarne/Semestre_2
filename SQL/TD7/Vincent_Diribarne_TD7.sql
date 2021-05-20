@@ -121,3 +121,44 @@
 --UPDATE client_spectacle SET Type_Spectacle='Show' WHERE Nom_Spectacle = 'AC/DC'
 --Select * from spectacle
 --Oui c'est possible
+
+
+--Question 21
+--UPDATE client_spectacle SET Type_Spectacle='Concert', Date_Spectacle = '2017-10-11' WHERE Nom_Spectacle = 'AC/DC' AND Date_Spectacle = '2002-06-12'
+--Select * from spectacle
+--Select * from calendrier
+--Ce n'est pas possible car la modification aura lieu sur plusieurs tables
+
+
+--Question 22
+--UPDATE spectacle_info SET Duree_Spectacle='3:10:00' WHERE Nom_Spectacle = 'Genesis' AND Nom_Salle = 'Stade de France'
+--Select * from spectacle
+--Select * from spectacle_info
+--Ce n'est pas possible car il y a des agrégat sur la vue spectacle_info
+
+
+--Question 23
+--alter view spectacle_info as
+--select spectacle.Nom_Spectacle, calendrier.Date_Spectacle, spectacle.Duree_Spectacle, salle.Nom_Salle FROM spectacle inner join calendrier on spectacle.id_spectacle=calendrier.id_spectacle inner join salle on salle.id_salle=calendrier.id_salle
+--go
+
+
+--Question 24
+--UPDATE spectacle_info SET Duree_Spectacle='3:10:00' WHERE Nom_Spectacle = 'Genesis' AND Nom_Salle = 'Stade de France'
+--Select * from spectacle
+--Select * from spectacle_info
+--Cette commande fonctionne car l'agregation avec le count a été enlevé
+
+
+--Question 25
+--INSERT INTO client_spectacle(Nom_Client, Prenom_Client, Type_Spectacle, Nom_Spectacle, Date_Spectacle) VALUES ('Star', 'George', 'Concert', 'Garbage', '2016-08-09')
+--Non ce n'est pas possible car la modification porte sur plusieurs tables (client et spectacle)
+
+
+--Question 26
+--Delete from client_spectacle WHERE Nom_Spectacle = 'AC/DC'
+--Non ce n'est pas possible car la modification porte sur plusieurs tables (client et spectacle)
+
+
+--Question 27
+--Ce n'est pas possible d'inserer, supprimer, modifier des données si la vue comporte un groups by.
