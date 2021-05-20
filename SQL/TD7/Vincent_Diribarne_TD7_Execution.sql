@@ -18,3 +18,9 @@
 
 --Question 12
 --Select * from info_salle
+
+--Question 17
+--Select * from client_spectacle
+
+--Question 18
+--Select * from spectacle_info

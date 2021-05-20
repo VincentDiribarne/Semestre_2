@@ -90,3 +90,34 @@
 --UPDATE info_salle SET type='Arène' WHERE type = 'Stade' AND [Capacité en millier de personnes] > 20
 --Select * from salle
 --Oui c'est possible de changer toutes les salle de type stade en Arène quand la capacité est superieur à 20 000 personnes
+
+
+
+--Partie 2 :
+
+--Question 16
+--Drop view info_client, info_client_lyon, info_salle, info_salle_paris
+
+
+--Question 17
+--create or alter view client_spectacle as
+--select client.Nom_Client, CLIENT.Prenom_Client, SPECTACLE.Nom_Spectacle, calendrier.Date_Spectacle, spectacle.Type_Spectacle FROM client inner join billet on billet.id_client=client.Id_Client inner join calendrier on calendrier.id_date=billet.id_date inner join spectacle on spectacle.id_spectacle=calendrier.Id_Spectacle
+--go
+
+
+--Question 18
+--create or alter view spectacle_info as
+--select spectacle.Nom_Spectacle, calendrier.Date_Spectacle, spectacle.Duree_Spectacle, salle.Nom_Salle, COUNT(billet.id_billet) as "Nb_billets_vendus" FROM spectacle inner join calendrier on spectacle.id_spectacle=calendrier.id_spectacle inner join salle on salle.id_salle=calendrier.id_salle inner join billet on billet.id_date=calendrier.id_date group by nom_spectacle, date_spectacle, duree_spectacle, nom_salle
+--go
+
+
+--Question 19
+--INSERT INTO client_spectacle(Nom_Client, Prenom_Client) VALUES ('Smith', 'Paul')
+--Select * from client
+--Oui c'est possible
+
+
+--Question 20
+--UPDATE client_spectacle SET Type_Spectacle='Show' WHERE Nom_Spectacle = 'AC/DC'
+--Select * from spectacle
+--Oui c'est possible
