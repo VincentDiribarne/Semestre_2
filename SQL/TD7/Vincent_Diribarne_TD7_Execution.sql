@@ -15,3 +15,6 @@
 
 --Question 10
 --Select * from info_salle_paris
+
+--Question 12
+--Select * from info_salle

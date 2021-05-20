@@ -61,3 +61,32 @@
 --create or alter view info_salle_paris as
 --Select Nom_salle as "Nom", capacité_salle as "Capacité", type_salle as "Type" FROM Salle WHERE Adresse_salle = 'Paris'
 --go
+
+
+--Question 11
+--INSERT INTO info_salle_paris(Nom, Capacité, Type) VALUES ('Arena', '8000', 'Concert')
+--Select * from salle
+--Oui c'est possible mais l'adresse =n'étant pas renseigné  va mettre NULL
+
+
+--Question 12
+--Alter view info_salle as
+--Select Nom_salle as "Nom", capacité_salle/1000 as "Capacité en millier de personnes", type_salle as "Type", adresse_salle as "Adresse" from salle
+--go
+
+
+--Question 13
+--UPDATE info_salle SET [Capacité en millier de personnes]=2 WHERE nom = 'Olympia' AND Adresse = 'Paris'
+--Ce n'est pas possible d'update info_salle puisqu'elle contient des informations dérivé (pour info_salle_paris)
+
+
+--Question 14
+--UPDATE info_salle SET Adresse='Nantes' WHERE nom = 'Olympia' AND Adresse = 'Paris'
+--Select * FROM Salle
+--Oui c'est possible car, la valeur ne fait plus partie de la table info_salle_paris puisqu'elle n'est plus à Paris
+
+
+--Question 15
+--UPDATE info_salle SET type='Arène' WHERE type = 'Stade' AND [Capacité en millier de personnes] > 20
+--Select * from salle
+--Oui c'est possible de changer toutes les salle de type stade en Arène quand la capacité est superieur à 20 000 personnes
