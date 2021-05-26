@@ -13,7 +13,7 @@ public class Test_Gson {
 		// Serialize once
 		Glass glass = new Glass("Green");
 		glass.drink();
-		FileWriter f = new FileWriter("src\\exo2\\data\\gson_once.json");
+		FileWriter f = new FileWriter("src\\Exercice2\\data\\gson_once.json");
 		//Gson g = new Gson();
 		//g.toJson(glass, f);
 		f.flush();
@@ -31,7 +31,7 @@ public class Test_Gson {
 		// Serialize collection
 		Glass[] glasses = new Glass[] { new Glass("Red"), new Glass("Blue") };
 		for (Glass glass : glasses){glass.drink();}
-		FileWriter f = new FileWriter("src\\exo2\\data\\gson_array.json");
+		FileWriter f = new FileWriter("src\\Exercice2\\data\\gson_array.json");
 		//Gson g = new Gson();
 		//g.toJson(glasses, f);
 		f.flush();

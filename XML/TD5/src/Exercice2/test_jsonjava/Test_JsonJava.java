@@ -15,7 +15,7 @@ public class Test_JsonJava {
 		// Serialize once
 		Glass glass = new Glass("Yellow");
 		glass.drink();
-		FileWriter f = new FileWriter("src\\exo2\\data\\jsonjava_once.json");
+		FileWriter f = new FileWriter("src\\Exercice2\\data\\jsonjava_once.json");
 		//f.write(new JSONObject(glass).toString(4));
 		f.flush();
 		f.close();
@@ -34,7 +34,7 @@ public class Test_JsonJava {
 		// Serialize collection
 		Glass[] glasses = new Glass[] { new Glass("Pink"), new Glass("White") };
 		for (Glass glass : glasses){glass.drink();}
-		FileWriter f = new FileWriter("src\\exo2\\data\\jsonjava_array.json");
+		FileWriter f = new FileWriter("src\\Exercice2\\data\\jsonjava_array.json");
 		//f.write(new JSONArray(glasses).toString(4));
 		f.flush();
 		f.close();
