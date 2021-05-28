@@ -274,3 +274,60 @@
 --ALTER Role gestion_client_spectacle ADD MEMBER gStar;
 --ALTER Role gestion_client_spectacle ADD MEMBER lHeart;
 --ALTER Role gestion_client_spectacle ADD MEMBER jDoe;
+
+
+
+--Partie 5 :
+
+--Question 45
+--ALTER Role gestion_spectacle DROP MEMBER gStar;
+--ALTER Role gestion_spectacle DROP MEMBER lHeart;
+--ALTER Role gestion_spectacle DROP MEMBER jDoe;
+
+--ALTER Role gestion_client_spectacle DROP MEMBER gStar;
+--ALTER Role gestion_client_spectacle DROP MEMBER lHeart;
+--ALTER Role gestion_client_spectacle DROP MEMBER jDoe;
+
+--Drop role gestion_spectacle
+--Drop role gestion_client_spectacle
+--Drop view client_spectacle, spectacle-info
+
+
+--Question 46
+--Create or alter view info_billet as
+--Select Id_Billet, Nom_Spectacle, Date_Spectacle, Nom_Salle, Adresse_Salle FROM BILLET INNER JOIN calendrier on CALENDRIER.Id_Date=BILLET.Id_Date INNER JOIN SPECTACLE on spectacle.Id_Spectacle=calendrier.Id_Spectacle INNER JOIN Salle ON Salle.Id_Salle=CALENDRIER.Id_Salle
+--GO
+
+
+--Question 47
+--CREATE or ALTER PROCEDURE check_info_billet 
+--@id INT
+--AS
+--SET NOCOUNT ON
+--BEGIN 
+--	SELECT Nom_Spectacle AS "Nom du Spectacle", Date_Spectacle AS "Date du Spectacle", Nom_Salle AS "Nom de la Salle", Adresse_Salle AS "Adresse" FROM info_billet WHERE @id = Id_Billet
+--END
+--GO
+
+
+--Question 48
+--Create or alter view gestion_spectacle as
+--Select 
+--	Nom_Spectacle,
+	--Duree_Spectacle,
+	--Type_Spectacle, 
+	--Date_Spectacle, 
+	--Nom_Salle,
+	--Capacité_Salle, 
+	--Adresse_Salle, 
+	--Type_Salle
+--FROM spectacle 
+--INNER JOIN calendrier on CALENDRIER.Id_Spectacle=Spectacle.Id_Spectacle 
+--INNER JOIN SALLE on Salle.Id_Salle=calendrier.Id_Salle
+--GO
+
+
+--Question 49
+--INSERT INTO gestion_spectacle(Nom_Spectacle, Duree_Spectacle,Type_Spectacle, Date_Spectacle, Nom_Salle,Capacité_Salle, Adresse_Salle, Type_Salle) VALUES('Metallica', '02.30.00', 'Concert', '10/10/2017', 'Arena', '7000', 'Trélazé', 'Concert')
+--GO
+--Ce n'est pas possible car la modification a lieu sur plusieurs tables 

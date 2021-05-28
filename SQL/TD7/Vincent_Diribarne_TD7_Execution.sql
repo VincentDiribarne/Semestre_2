@@ -36,3 +36,13 @@
 
 ----Question 34
 --Select * from info_spectacle_concert
+
+--Question 46
+--Select * from info_billet
+
+--Question 47
+--execute check_info_billet 11
+--GO
+
+--Question 48
+--Select * from Gestion_Spectacle
