@@ -245,3 +245,32 @@
 --Select * from info_spectacle_concert
 --Select * from Spectacle;
 --Le spectacle a été supprimé
+
+
+
+--Partie 4:
+
+--Question 41
+--Drop view info_billet_sup70, info_salle_N, info_spectacle_concert
+
+
+--Question 42
+--Create Role gestion_spectacle
+--GRANT SELECT ON spectacle_info(Nom_Spectacle, Date_Spectacle, Nom_Salle) TO gestion_spectacle;
+
+
+--Question 43
+--ALTER Role gestion_spectacle ADD MEMBER gStar;
+--ALTER Role gestion_spectacle ADD MEMBER lHeart;
+--ALTER Role gestion_spectacle ADD MEMBER jDoe;
+
+
+--Question 44
+--a)
+--Create role gestion_client_spectacle
+--GRANT SELECT ON client_spectacle(Nom_Client, Prenom_Client, Nom_Spectacle, Date_Spectacle, Type_Spectacle) to gestion_client_spectacle
+--GRANT UPDATE ON client_spectacle(Nom_Client, Prenom_Client, Nom_Spectacle, Type_Spectacle) to gestion_client_spectacle
+
+--ALTER Role gestion_client_spectacle ADD MEMBER gStar;
+--ALTER Role gestion_client_spectacle ADD MEMBER lHeart;
+--ALTER Role gestion_client_spectacle ADD MEMBER jDoe;
