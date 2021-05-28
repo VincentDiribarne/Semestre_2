@@ -161,4 +161,56 @@
 
 
 --Question 27
---Ce n'est pas possible d'inserer, supprimer, modifier des données si la vue comporte un groups by.
+--Ce n'est pas possible d'inserer, supprimer, modifier des données si la vue comporte un group by.
+
+
+
+--Partie 3 :
+
+--Question 28
+--Create OR alter view info_salle_N as
+--Select Nom_Salle, Capacité_Salle, Adresse_Salle, Type_Salle FROM SALLE WHERE Adresse_Salle LIKE 'N%';
+--GO
+
+
+--Question 29
+--UPDATE info_salle_N SET Capacité_Salle='10000' WHERE Nom_Salle = 'Zenith' AND Adresse_Salle = 'Nantes'
+--Select * from Salle
+--La capacité a été modifié puisque la vue marche sur les adresse commençant par N et l'adresse fourni est Nantes.
+
+
+--Question 30
+--UPDATE info_salle_N SET Capacité_Salle='9500' WHERE Nom_Salle = 'Zenith' AND Adresse_Salle = 'Lille'
+--Select * from Salle
+--La capacité n'est pas modifié car l'adresse fourni ne commence pas par N
+
+
+--Question 31
+--Create or alter view info_billet_sup70 as
+--Select Id_billet, Tarif_billet FROM BILLET Where tarif_billet > 70
+--GO
+
+
+--Question 32
+--UPDATE info_billet_sup70 SET Tarif_billet='50' WHERE Id_Billet = '17'
+--Select * from billet
+--Le tarif est changé car avant le changement le tarif était superieur à 70
+
+
+--Question 33
+--Alter view info_billet_sup70 as
+--Select Id_billet, Tarif_billet FROM BILLET Where tarif_billet > 70 with Check Option
+--Go
+
+
+--Question 34
+--Create OR alter view info_spectacle_concert as
+--Select Nom_Spectacle, Duree_Spectacle, Type_Spectacle From Spectacle Where Type_Spectacle = 'Concert'
+--GO
+
+
+--Question 35
+--INSERT INTO info_spectacle_concert(Nom_Spectacle, Duree_Spectacle, Type_Spectacle) VALUES ('Hamlet', '01:20:00', 'Théatre')
+--Select * from info_spectacle_concert
+--Select * from SPECTACLE
+--Le spectacle a été ajouté dans la table SPECTACLE mais on ne le voit pas depuis la vue vu que ce n'est pas un théatre

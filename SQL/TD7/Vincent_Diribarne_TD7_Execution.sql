@@ -27,3 +27,12 @@
 
 --Question 23
 --Select * from spectacle_info order by Nom_Spectacle, date_spectacle
+
+--Question 28
+--Select * from info_salle_N
+
+--Question 31
+--Select * from info_billet_sup70
+
+----Question 34
+Select * from info_spectacle_concert
