@@ -214,3 +214,34 @@
 --Select * from info_spectacle_concert
 --Select * from SPECTACLE
 --Le spectacle a été ajouté dans la table SPECTACLE mais on ne le voit pas depuis la vue vu que ce n'est pas un théatre
+
+--Question 36
+--Alter view info_spectacle_concert as
+--Select Nom_Spectacle, Duree_Spectacle, Type_Spectacle FROM Spectacle Where Type_Spectacle = 'Concert' with Check Option
+--Go
+
+--Question 37
+--Delete from info_spectacle_concert WHERE Nom_Spectacle = 'Rolling Stone'
+--Select * from info_spectacle_concert
+--Select * from Spectacle;
+--On peut voir la presence d'une clé étrangère. C'est pour cela que la commande ne fonctionne pas
+
+
+--Question 38
+--Insert into spectacle(Nom_Spectacle, Duree_Spectacle, Type_Spectacle) Values ('Hamlet', '01:20:00', 'Théatre')
+--Select * from SPECTACLE
+--Go
+
+
+--Question 39
+--Delete from info_spectacle_concert WHERE Nom_Spectacle = 'Hamlet' AND Type_Spectacle = 'Theatre'
+--Select * from info_spectacle_concert
+--Select * from Spectacle;
+--Non ce n'est pas possible de supprimer Hamlet car il s'agit d'un théatre et avec le checkOption on ne peut dont pas supprimer
+
+
+--Question 40
+--Delete from info_spectacle_concert WHERE Nom_Spectacle = 'Guano Apes'
+--Select * from info_spectacle_concert
+--Select * from Spectacle;
+--Le spectacle a été supprimé

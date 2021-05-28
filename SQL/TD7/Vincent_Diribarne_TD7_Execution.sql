@@ -35,4 +35,4 @@
 --Select * from info_billet_sup70
 
 ----Question 34
-Select * from info_spectacle_concert
+--Select * from info_spectacle_concert
