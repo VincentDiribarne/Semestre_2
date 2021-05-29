@@ -161,4 +161,173 @@
 
 
 --Question 27
---Ce n'est pas possible d'inserer, supprimer, modifier des données si la vue comporte un groups by.
+--Ce n'est pas possible d'inserer, supprimer, modifier des données si la vue comporte un group by.
+
+
+
+--Partie 3 :
+
+--Question 28
+--Create OR alter view info_salle_N as
+--Select Nom_Salle, Capacité_Salle, Adresse_Salle, Type_Salle FROM SALLE WHERE Adresse_Salle LIKE 'N%';
+--GO
+
+
+--Question 29
+--UPDATE info_salle_N SET Capacité_Salle='10000' WHERE Nom_Salle = 'Zenith' AND Adresse_Salle = 'Nantes'
+--Select * from Salle
+--La capacité a été modifié puisque la vue marche sur les adresse commençant par N et l'adresse fourni est Nantes.
+
+
+--Question 30
+--UPDATE info_salle_N SET Capacité_Salle='9500' WHERE Nom_Salle = 'Zenith' AND Adresse_Salle = 'Lille'
+--Select * from Salle
+--La capacité n'est pas modifié car l'adresse fourni ne commence pas par N
+
+
+--Question 31
+--Create or alter view info_billet_sup70 as
+--Select Id_billet, Tarif_billet FROM BILLET Where tarif_billet > 70
+--GO
+
+
+--Question 32
+--UPDATE info_billet_sup70 SET Tarif_billet='50' WHERE Id_Billet = '17'
+--Select * from billet
+--Le tarif est changé car avant le changement le tarif était superieur à 70
+
+
+--Question 33
+--Alter view info_billet_sup70 as
+--Select Id_billet, Tarif_billet FROM BILLET Where tarif_billet > 70 with Check Option
+--Go
+
+
+--Question 34
+--Create OR alter view info_spectacle_concert as
+--Select Nom_Spectacle, Duree_Spectacle, Type_Spectacle From Spectacle Where Type_Spectacle = 'Concert'
+--GO
+
+
+--Question 35
+--INSERT INTO info_spectacle_concert(Nom_Spectacle, Duree_Spectacle, Type_Spectacle) VALUES ('Hamlet', '01:20:00', 'Théatre')
+--Select * from info_spectacle_concert
+--Select * from SPECTACLE
+--Le spectacle a été ajouté dans la table SPECTACLE mais on ne le voit pas depuis la vue vu que ce n'est pas un théatre
+
+--Question 36
+--Alter view info_spectacle_concert as
+--Select Nom_Spectacle, Duree_Spectacle, Type_Spectacle FROM Spectacle Where Type_Spectacle = 'Concert' with Check Option
+--Go
+
+--Question 37
+--Delete from info_spectacle_concert WHERE Nom_Spectacle = 'Rolling Stone'
+--Select * from info_spectacle_concert
+--Select * from Spectacle;
+--On peut voir la presence d'une clé étrangère. C'est pour cela que la commande ne fonctionne pas
+
+
+--Question 38
+--Insert into spectacle(Nom_Spectacle, Duree_Spectacle, Type_Spectacle) Values ('Hamlet', '01:20:00', 'Théatre')
+--Select * from SPECTACLE
+--Go
+
+
+--Question 39
+--Delete from info_spectacle_concert WHERE Nom_Spectacle = 'Hamlet' AND Type_Spectacle = 'Theatre'
+--Select * from info_spectacle_concert
+--Select * from Spectacle;
+--Non ce n'est pas possible de supprimer Hamlet car il s'agit d'un théatre et avec le checkOption on ne peut dont pas supprimer
+
+
+--Question 40
+--Delete from info_spectacle_concert WHERE Nom_Spectacle = 'Guano Apes'
+--Select * from info_spectacle_concert
+--Select * from Spectacle;
+--Le spectacle a été supprimé
+
+
+
+--Partie 4:
+
+--Question 41
+--Drop view info_billet_sup70, info_salle_N, info_spectacle_concert
+
+
+--Question 42
+--Create Role gestion_spectacle
+--GRANT SELECT ON spectacle_info(Nom_Spectacle, Date_Spectacle, Nom_Salle) TO gestion_spectacle;
+
+
+--Question 43
+--ALTER Role gestion_spectacle ADD MEMBER gStar;
+--ALTER Role gestion_spectacle ADD MEMBER lHeart;
+--ALTER Role gestion_spectacle ADD MEMBER jDoe;
+
+
+--Question 44
+--a)
+--Create role gestion_client_spectacle
+--GRANT SELECT ON client_spectacle(Nom_Client, Prenom_Client, Nom_Spectacle, Date_Spectacle, Type_Spectacle) to gestion_client_spectacle
+--GRANT UPDATE ON client_spectacle(Nom_Client, Prenom_Client, Nom_Spectacle, Type_Spectacle) to gestion_client_spectacle
+
+--ALTER Role gestion_client_spectacle ADD MEMBER gStar;
+--ALTER Role gestion_client_spectacle ADD MEMBER lHeart;
+--ALTER Role gestion_client_spectacle ADD MEMBER jDoe;
+
+
+
+--Partie 5 :
+
+--Question 45
+--ALTER Role gestion_spectacle DROP MEMBER gStar;
+--ALTER Role gestion_spectacle DROP MEMBER lHeart;
+--ALTER Role gestion_spectacle DROP MEMBER jDoe;
+
+--ALTER Role gestion_client_spectacle DROP MEMBER gStar;
+--ALTER Role gestion_client_spectacle DROP MEMBER lHeart;
+--ALTER Role gestion_client_spectacle DROP MEMBER jDoe;
+
+--Drop role gestion_spectacle
+--Drop role gestion_client_spectacle
+--Drop view client_spectacle, spectacle-info
+
+
+--Question 46
+--Create or alter view info_billet as
+--Select Id_Billet, Nom_Spectacle, Date_Spectacle, Nom_Salle, Adresse_Salle FROM BILLET INNER JOIN calendrier on CALENDRIER.Id_Date=BILLET.Id_Date INNER JOIN SPECTACLE on spectacle.Id_Spectacle=calendrier.Id_Spectacle INNER JOIN Salle ON Salle.Id_Salle=CALENDRIER.Id_Salle
+--GO
+
+
+--Question 47
+--CREATE or ALTER PROCEDURE check_info_billet 
+--@id INT
+--AS
+--SET NOCOUNT ON
+--BEGIN 
+--	SELECT Nom_Spectacle AS "Nom du Spectacle", Date_Spectacle AS "Date du Spectacle", Nom_Salle AS "Nom de la Salle", Adresse_Salle AS "Adresse" FROM info_billet WHERE @id = Id_Billet
+--END
+--GO
+
+
+--Question 48
+--Create or alter view gestion_spectacle as
+--Select 
+--	Nom_Spectacle,
+	--Duree_Spectacle,
+	--Type_Spectacle, 
+	--Date_Spectacle, 
+	--Nom_Salle,
+	--Capacité_Salle, 
+	--Adresse_Salle, 
+	--Type_Salle
+--FROM spectacle 
+--INNER JOIN calendrier on CALENDRIER.Id_Spectacle=Spectacle.Id_Spectacle 
+--INNER JOIN SALLE on Salle.Id_Salle=calendrier.Id_Salle
+--GO
+
+
+--Question 49
+--INSERT INTO gestion_spectacle(Nom_Spectacle, Duree_Spectacle,Type_Spectacle, Date_Spectacle, Nom_Salle,Capacité_Salle, Adresse_Salle, Type_Salle) VALUES('Metallica', '02.30.00', 'Concert', '10/10/2017', 'Arena', '7000', 'Trélazé', 'Concert')
+--GO
+--Ce n'est pas possible car la modification a lieu sur plusieurs tables 
