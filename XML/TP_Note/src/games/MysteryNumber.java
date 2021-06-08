@@ -2,27 +2,58 @@ package games;
 
 public class MysteryNumber {
 
-	public static int DEFAULT_MAX_VALUE = 100 ;
 	public static final int ABORT_VALUE = Integer.MAX_VALUE ;
-	private int max_value;
-	
-	public MysteryNumber(){
-		this(MysteryNumber.DEFAULT_MAX_VALUE);
+	private int value;
+
+	public int Difficulte() {
+		char sChoice;
+		// Nombre mystère - jeux et meilleurs scores
+		BestScores scores = new BestScores();
+
+		Menu();
+		// Récupération saisie utilisateur
+		sChoice = Lire.c();
+		// Analyse saisie utilisateur
+		switch (sChoice) {
+			case 'q': // Choix 'q' : Fin
+				System.exit(1);
+				break;
+			case 'f':
+				value = 10;
+				break;
+			case 'n':
+				value = 100;
+				break;
+			case 'd':
+				value = 1000;
+				break;
+			case 's':
+				scores.affichageScore();
+				Difficulte();
+				break;
+			default:
+				System.out.println("Saisie incorrecte !!!");
+				break;
+		}
+		return value;
 	}
 
-	public MysteryNumber(int max_value){
-		super();
-		this.max_value = max_value;
+	public void Menu() {
+		System.out.println("\nMenu :");
+		System.out.println("\tf - Facile");
+		System.out.println("\tn - Normal");
+		System.out.println("\td - Difficile ");
+		System.out.println("\ts - Score");
+		System.out.println("\tq - Quitter");
+		System.out.print("Votre choix : ");
 	}
-	
-	public int play(){
-		
+
+	public int play() {
+		int max_value = Difficulte();
 	    int score=0;
 	    int value=0;
-	    int mystery = new Double(this.max_value * Math.random() +1).intValue();
-	    
-	    System.out.println("Trouvez le nombre mystère (entre 1 et " + this.max_value + ", 0 pour abandon) : ");
-	    
+	    int mystery = new Double(max_value * Math.random() +1).intValue();
+	    System.out.println("Trouvez le nombre mystere (entre 1 et " + max_value + ", 0 pour abandon) : ");
 	    while (value != mystery) {
 		    /* Le joueur tente sa chance */
 		    System.out.println("Entrez un nombre (#" + score + ") : ");
@@ -41,10 +72,5 @@ public class MysteryNumber {
 	    /* Get it ! */
 	    System.out.println("Bravo, vous avez gagné en " + score + " coups");
 	    return score;
-	}
-	public static void main(String[] args) {
-		/* Unit tests */
-		MysteryNumber game = new MysteryNumber();
-		game.play();
 	}
 }

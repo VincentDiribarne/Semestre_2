@@ -153,7 +153,7 @@ public class BestScores {
 			return false;
 	}
 
-	public static void main(String[] args) throws Exception {
+	public void affichageScore() {
 		/* Unit tests */
 		
 		// Init d'un BestScores de 5 scores, dans l'ordre croissant
@@ -162,10 +162,12 @@ public class BestScores {
 		best_scores.add_score(12, "A");
 		// Ajout d'un score
 		best_scores.add_score(15, "B");
+
 		// Teste si un score peut rentrer dans les meilleurs scores
-		System.out.println(best_scores.is_scoring(16));
+		/*System.out.println(best_scores.is_scoring(16));
 		System.out.println(best_scores.is_scoring(14));
-		System.out.println(best_scores.is_scoring(11));
+		System.out.println(best_scores.is_scoring(11));*/
+
 		// Ajout de scores
 		best_scores.add_score(21, "C");
 		best_scores.add_score(14, "D");
@@ -177,12 +179,13 @@ public class BestScores {
 		best_scores.add_score(33, "J");
 		best_scores.add_score(5, "K");
 		// Teste si un score peut rentrer dans les meilleurs scores
-		System.out.println(best_scores.is_scoring(100));
-		System.out.println(best_scores.is_scoring(11));
+		//System.out.println(best_scores.is_scoring(100));
+		//System.out.println(best_scores.is_scoring(11));
 		// Affichage(s)
+		System.out.println("");
 		best_scores.write();
-		System.out.println(best_scores);
-		
+		//System.out.println("\n" + best_scores);
+		/*
 		// Sauvegarde XML (non implémenté)
 		try {
 			best_scores.save_xml("data/scores.xml");
@@ -211,7 +214,7 @@ public class BestScores {
 
 		// Chargement JSON (non implémenté)
 		best_scores = BestScores.load_json("data/scores.json");
-		best_scores.write();
+		best_scores.write();*/
 
 	}
 
