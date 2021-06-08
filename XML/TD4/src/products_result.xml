@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cafes>
+    <cafe>
+        <nom>Robusta</nom>
+        <prix>3.15 Euros</prix>
+    </cafe>
+	<cafe>
+		<nom>Noir Désir</nom>
+		<prix>2.21 Euros</prix>
+	</cafe>
+	<cafe>
+		<nom>Java</nom>
+		<prix>5.15 Euros</prix>
+	</cafe>
+</cafes>
