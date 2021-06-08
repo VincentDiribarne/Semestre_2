@@ -1,4 +1,8 @@
 package games;
+import org.jdom2.Attribute;
+import org.jdom2.Document;
+import org.jdom2.Element;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -128,7 +132,17 @@ public class BestScores {
 	// Sauvegarde des scores dans un fichier XML
 	//     filename : nom du fichier
 	public void save_xml(String filename){
-		
+		Element scores = new Element("scores");
+		Document doc = new Document(scores);
+
+		for (Score score : this.scores) {
+			Element scoreParam = new Element("Score");
+			scoreParam.addContent(new Element("").setText("" +score.value));
+			scoreParam.addContent(new Element("nom").setText(score.who));
+			scoreParam.addContent(new Element("date").setText(score.who));
+
+			doc.getRootElement().addContent(scoreParam);
+		}
 	}
 	
 	// Chargement des scores depuis un fichier JSON
@@ -153,7 +167,7 @@ public class BestScores {
 			return false;
 	}
 
-	public void affichageScore() {
+	public void affichageScore() throws Exception {
 		/* Unit tests */
 		
 		// Init d'un BestScores de 5 scores, dans l'ordre croissant
@@ -185,7 +199,7 @@ public class BestScores {
 		System.out.println("");
 		best_scores.write();
 		//System.out.println("\n" + best_scores);
-		/*
+
 		// Sauvegarde XML (non implémenté)
 		try {
 			best_scores.save_xml("data/scores.xml");
@@ -214,7 +228,7 @@ public class BestScores {
 
 		// Chargement JSON (non implémenté)
 		best_scores = BestScores.load_json("data/scores.json");
-		best_scores.write();*/
+		best_scores.write();
 
 	}
 

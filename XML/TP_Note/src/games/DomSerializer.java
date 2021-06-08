@@ -19,7 +19,6 @@ import org.w3c.dom.ls.LSOutput;
 import org.w3c.dom.ls.LSSerializer;
 
 public class DomSerializer {
-
 		private Document document;
 
 		public DomSerializer(Document document) {
