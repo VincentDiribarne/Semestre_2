@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scores>
+  <Score>
+    <valeur>5</valeur>
+    <nom>K</nom>
+    <date>K</date>
+  </Score>
+  <Score>
+    <valeur>7</valeur>
+    <nom>H</nom>
+    <date>H</date>
+  </Score>
+  <Score>
+    <valeur>12</valeur>
+    <nom>A</nom>
+    <date>A</date>
+  </Score>
+  <Score>
+    <valeur>14</valeur>
+    <nom>D</nom>
+    <date>D</date>
+  </Score>
+  <Score>
+    <valeur>15</valeur>
+    <nom>B</nom>
+    <date>B</date>
+  </Score>
+</scores>

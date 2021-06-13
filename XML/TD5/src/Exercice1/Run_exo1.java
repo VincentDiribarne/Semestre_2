@@ -2,6 +2,8 @@ package Exercice1;
 
 import java.io.IOException;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.json.JSONException;
 
 public class Run_exo1 {
@@ -15,9 +17,9 @@ public class Run_exo1 {
 		
 		// Gson
 		System.out.println("======= Gson =======");
-		// Gson g = new Gson();
-		// Gson g = new GsonBuilder().setPrettyPrinting().create();
-		// System.out.println(g.toJson(coffees));
+		Gson g = new Gson();
+		g = new GsonBuilder().setPrettyPrinting().create();
+		System.out.println(g.toJson(coffees));
 		
 		// Jackson
 		System.out.println("======= Jackson =======");
