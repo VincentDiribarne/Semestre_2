@@ -1,4 +1,4 @@
-public class Coffee{
+public class Coffee {
 	public String id ;
 	public String name ;
 	public double price ;

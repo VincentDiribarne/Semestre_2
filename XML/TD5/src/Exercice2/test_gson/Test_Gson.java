@@ -10,11 +10,11 @@ import java.io.IOException;
 public class Test_Gson {
 	
 	static public void once() throws IOException {
-		
+		Glass glass;
 		System.out.println("======= Gson / once =======");
 	
 		// Serialize once
-		Glass glass = new Glass("Green");
+		glass = new Glass("Green");
 		glass.drink();
 		FileWriter f = new FileWriter("src\\Exercice2\\data\\gson_once.json");
 		Gson g = new Gson();

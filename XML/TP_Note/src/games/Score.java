@@ -5,8 +5,7 @@ public class Score {
 	String who ;
 	String when ;
 	int value;
-	
-	// Constructeur par défaut, sans argument
+
 	public Score() {
 		super();
 	}

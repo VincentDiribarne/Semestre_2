@@ -25,12 +25,11 @@ public class WriteProductsXml {
 
 	public void write() throws FileNotFoundException, IOException {
 
-		// Init Cafe collection
 		List<Coffee> coffees = new ArrayList<>();
 		coffees.add(new Coffee("001", "Robusta",3.15));
 		coffees.add(new Coffee("002", "Noir Désir",2.21));
 		coffees.add(new Coffee("003", "Java",5.15));
-		
+
 		Element cafes = new Element("cafes");
 		Document doc = new Document(cafes);
 		// doc.setRootElement(cafes);
